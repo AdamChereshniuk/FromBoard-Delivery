@@ -324,6 +324,10 @@ body {
 }
 
 /* Reviews */
+.reviews-section {
+  padding-bottom: 72px;
+}
+
 .reviews__title {
   margin-bottom: 32px;
   font-weight: 900;
