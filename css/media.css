@@ -35,10 +35,6 @@
 }
 
 @media (max-width: 1240px) {
-    .section__offset {
-        padding-top: 100px;
-    }
-
     /* Header */
     .header {
         padding: 24px 0 0 0;
@@ -214,12 +210,12 @@
         gap: 12px;
     }
 
-    .hero-right__inputs {
-        flex-direction: column;
-    }
-
     .hero-right__big-input, .hero-right__input {
         padding: 10px;
+    }
+
+    .reviews-section {
+        padding-bottom: 0;
     }
 }
 
@@ -231,6 +227,16 @@
     /* Header */
     .header-bottom__list {
         gap: 16px;
+    }
+
+    /* Hero */
+    .hero-right__form {
+        max-width: 350px;
+    }
+
+    .hero-right__inputs {
+        grid-template-columns: 1fr;
+        width: 100%;
     }
 
     /* Advantages */

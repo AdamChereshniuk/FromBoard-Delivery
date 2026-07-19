@@ -70,24 +70,30 @@
                         <h2 class="hero-right__title">Калькулятор доставки</h2>
                         <p class="hero-right__text">Посчитайте, сколько будет стоить перевозка покупки из зарубежа</p>
                         <form class="hero-right__form">
-                            <input class="hero-right__big-input" type="text" placeholder="Имя">
+                            <input class="hero-right__input hero-right__big-input" type="text" placeholder="Имя" id="name">
                             <div class="hero-right__inputs">
-                                <input class="hero-right__input" type="email" placeholder="Почта">
-                                <input class="hero-right__input" type="text" placeholder="Телефон">
+                                <input class="hero-right__input" type="email" placeholder="Почта" id="email">
+                                <input class="hero-right__input" type="text" placeholder="+7 999 999 9999" id="phone">
                             </div>
                             <div class="hero-right__inputs">
-                                <input class="hero-right__input" type="email" placeholder="Общая площадь, м²">
-                                <input class="hero-right__input" type="number" placeholder="Вес, кг">
+                                <input class="hero-right__input" type="text" placeholder="Общая площадь, м²" id="square">
+                                <input class="hero-right__input" type="number" placeholder="Вес, кг" id="weight">
                             </div>
                             <div class="hero-right__inputs">
-                                <input class="hero-right__input" type="email" placeholder="Страна покупки">
-                                <input class="hero-right__input" type="text" placeholder="Город покупки">
+                                <input class="hero-right__input" type="text" placeholder="Страна покупки" id="country">
+                                <input class="hero-right__input" type="text" placeholder="Город покупки" id="buy-city">
                             </div>
                             <div class="hero-right__inputs">
-                                <input class="hero-right__input" type="email" placeholder="Область доставки">
-                                <input class="hero-right__input" type="text" placeholder="Город доставки">
+                                <input class="hero-right__input" type="text" placeholder="Область доставки" id="area">
+                                <input class="hero-right__input" type="text" placeholder="Город доставки" id="delivery-city">
                             </div>
-                            <button class="hero-right__btn btn">Заказать расчёт</button>
+                            <span class="hero-right__error">Все поля должны быть заполнены</span>
+                            <span class="hero-right__success">
+                                Данные успешно отправлены!
+                                <br>
+                                Мы свяжемся с Вами в ближайшее время.
+                            </span>
+                            <button class="hero-right__btn btn" type="submit">Заказать расчёт</button>
                         </form>
                     </div>
                 </div>
@@ -238,14 +244,20 @@
                 <h2 class="question__title">Остались вопросы?</h2>
                 <form class="question__form">
                     <div class="question__inputs">
-                        <input type="text" class="question__input" placeholder="Имя">
-                        <input type="email" class="question__input" placeholder="Почта">
+                        <input type="text" class="question__input question__name-input" placeholder="Имя">
+                        <input type="email" class="question__input question__email-input" placeholder="Почта">
                     </div>
                     <div class="question__inputs">
-                        <input type="text" class="question__input" placeholder="Телефон">
-                        <input type="text" class="question__input" placeholder="Тема вопроса">
+                        <input type="text" class="question__input question__phone-input" placeholder="Телефон">
+                        <input type="text" class="question__input question__topic-input" placeholder="Тема вопроса">
                     </div>
-                    <textarea class="question__textarea" placeholder="Сообщение..."></textarea>
+                    <textarea class="question__input question__textarea" placeholder="Сообщение..."></textarea>
+                    <span class="question__error">Все поля должны быть заполнены!</span>
+                    <span class="question__success">
+                        Заявка успешна отправлена!
+                        <br>
+                        Мы свяжемся с Вами в ближайшее время.
+                    </span>
                     <button class="question__btn btn">Оставить заявку</button>
                 </form>
             </div>

@@ -211,10 +211,13 @@ body {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  width: 100%;
+  max-width: 470px;
 }
 
 .hero-right__inputs {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
@@ -227,6 +230,16 @@ body {
 
 .hero-right__big-input::placeholder, .hero-right__input::placeholder {
   color: #9CA3AF;
+}
+
+.hero-right__error, .question__error {
+  color: red;
+  text-align: center;
+}
+
+.hero-right__success, .question__success {
+  color: green;
+  text-align: center;
 }
 
 /* Advantages */
